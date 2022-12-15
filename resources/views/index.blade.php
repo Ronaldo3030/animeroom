@@ -1,6 +1,12 @@
 <x-layout title="Home">
   <div class="d-flex position-relative justify-content-between py-3 align-items-center">
-    <div><button onclick="getOneAnime('17')">Teste apí</button></div>
+    {{-- <div><button onclick="getOneAnime('17')">Teste apí</button></div> --}}
+    <div>
+      <form class="d-flex" role="search">
+        <input onkeyup="searchBar(this.value)" class="form-control me-2" type="search" placeholder="Search"
+          aria-label="Search">
+      </form>
+    </div>
     <h1 class="text-center">AnimeRoom</h1>
     <a style="height:30px;" href="/animes/register" type="button" class="btn btn-success d-flex align-items-center">
       Add anime
@@ -15,11 +21,8 @@
     <div class="content-animes d-grid" style="grid-template-columns: 1fr 1fr 1fr;gap:15px;">
       @foreach ($animes as $anime)
         <div class="card p-0">
-          <div style="width: 100%;
-          height: 150px;
-          overflow: hidden;">
-            <img class="card-img-top" src="/img/animes/{{ $anime->img }}" style="width:100%">
-          </div>
+          <img class="card-img-top" src="/img/animes/{{ $anime->img }}"
+            style="width:100%;height:150px;object-fit:cover;">
           <div class="card-body position-relative">
             <h5 class="card-title">{{ $anime->name }}</h5>
             <p class="card-text">{{ $anime->comment }}</p>
