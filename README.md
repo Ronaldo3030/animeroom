@@ -23,4 +23,4 @@ Na tela inicial tem um campo onde pode-se procurar os animes cadastrados, confor
 ## O que desenvolvi com esse projeto
 
 Com esse projeto pude desenvolver mais minhas habilidades com o Laravel, desde mexer com o blade na parte mais do Front-end quanto nos controllers e rotas com a parte mais do Back-end.<br>
-Também aprendi mais como usar a documentação da ferramenta, procurar métodos mais assertivos na documentação.
+Também aprendi mais como usar a documentação da ferramenta, procurando métodos mais assertivos de forma mais rápida.
